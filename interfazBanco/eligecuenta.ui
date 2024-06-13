@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EligeCuenta</class>
+ <widget class="QDialog" name="EligeCuenta">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>901</width>
+    <height>617</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#EligeCuenta{
+background-color:rgb(0, 170, 255);
+}</string>
+  </property>
+  <widget class="QLabel" name="bienvenido">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>241</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>26</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#bienvenido{
+color:black;
+}</string>
+   </property>
+   <property name="text">
+    <string>Bienvenido(a) </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>80</y>
+     <width>241</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_2{
+color:black;
+}</string>
+   </property>
+   <property name="text">
+    <string>Eliga una cuenta:</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="contenedorAhorro">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>170</y>
+     <width>291</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#contenedorAhorro{
+background-color:rgb(255, 255, 170);
+border-radius:7px;
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="btncuentaAhorros">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>271</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btncuentaAhorros{
+background-color: rgb(13, 195, 4);
+padding:5px;
+color:white;
+border-radius:7px;
+}
+
+#btncuentaAhorros:hover{
+background-color: red;
+}</string>
+    </property>
+    <property name="text">
+     <string>Elegir</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>253</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label{
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Cuenta de ahorros</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>54</y>
+      <width>272</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_4{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>* Mantenimiento sin costo.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_5{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>* Hasta 1 depósito en ventanilla.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>271</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_9{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>* Sin costos en la provincia</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_8{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>donde se abrió la cuenta.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>271</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_6{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>* Operaciones en cajeros y </string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_7{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>canales digitales.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="contenedorCredito">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>170</y>
+     <width>321</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#contenedorCredito{
+background-color:rgb(255, 255, 170);
+border-radius:7px;
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="btncuentaCredito">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>270</y>
+      <width>301</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#btncuentaCredito{
+background-color: rgb(13, 195, 4);
+padding:5px;
+color:white;
+border-radius:7px;
+}
+
+#btncuentaCredito:hover{
+background-color: red;
+}</string>
+    </property>
+    <property name="text">
+     <string>Elegir</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>244</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_3{
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>Cuenta de crédito</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>301</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_10{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>Puedes elegir entre estas 3</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_11">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_11{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>opciones: </string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>301</width>
+      <height>92</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_12{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>* Credit Black Card.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_13{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>* Credit Gold Card.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_14{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>* Credit Normal Card.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnMenu">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>520</y>
+     <width>241</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Volver al Menú</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

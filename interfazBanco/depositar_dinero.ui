@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>depositar_dinero</class>
+ <widget class="QDialog" name="depositar_dinero">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>272</width>
+    <height>362</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#depositar_dinero{
+background-color:rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QLabel" name="titulo_depositar">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#titulo_depositar{
+background-color:rgb(255, 255, 127);
+border-radius:10px;
+}</string>
+   </property>
+   <property name="text">
+    <string>DEPOSITAR DINERO</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_depositar">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>250</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_depositar{
+border-radius:10px;
+background-color:rgb(85, 255, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>ENVIAR</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deposito_salir">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>300</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#deposito_salir{
+border-radius:10px;
+background-color:rgb(255, 97, 100);
+}</string>
+   </property>
+   <property name="text">
+    <string>SALIR</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>168</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_monto">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#label_monto{
+background-color: rgb(248, 165, 0);
+border-radius:4px;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Ingresar Monto</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="monto">
+      <property name="styleSheet">
+       <string notr="true">#monto{
+border-radius:5px;
+border: 1px solid #000000;
+}</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_cuenta">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#label_cuenta{
+background-color: rgb(248, 165, 0);
+border-radius:4px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Numero de Cuenta</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="numero_cuenta">
+      <property name="styleSheet">
+       <string notr="true">#numero_cuenta{
+border-radius:5px;
+border: 1px solid #000000;
+}</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

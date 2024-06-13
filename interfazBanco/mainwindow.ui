@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>947</width>
+    <height>657</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Login and Register</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="src.qrc">
+    <normaloff>:/images/img/icono.ico</normaloff>:/images/img/icono.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{
+border-image: url(:/images/img/bg.jpg);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="topPanel" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>951</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#topPanel{
+border-image:url(:/images/img/banner.jpg);
+}</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>10</y>
+       <width>581</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QWidget" name="loginIcon" native="true">
+        <property name="styleSheet">
+         <string notr="true">#loginIcon{
+border-image:url(:/images/img/login.png);
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="palette">
+         <palette>
+          <active/>
+          <inactive/>
+          <disabled/>
+         </palette>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>36</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>SISTEMA BANCARIO</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="caja_registro">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>110</y>
+      <width>321</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#caja_registro{
+color:black;
+background-color:rgb(85, 255, 127);
+border-radius:10px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Registrarse</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#label_2{
+color:black;
+}</string>
+         </property>
+         <property name="text">
+          <string>Nombre de usuario:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="nombre_usuario">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#nombre_usuario{
+background-color:white;
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#label_3{
+color:black;
+}</string>
+         </property>
+         <property name="text">
+          <string>Contraseña:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="contrasenia">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#contrasenia{
+background-color:white;
+}</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#label_4{
+color:black;
+}</string>
+         </property>
+         <property name="text">
+          <string>Email:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="email">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#email{
+background-color:white;
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="boton_registro">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#boton_registro{
+color:black;
+background-color:rgb(255, 255, 0);
+border-radius:4px;
+padding:7px;
+}
+
+#boton_registro:hover{
+color:white;
+background-color:red;
+}</string>
+       </property>
+       <property name="text">
+        <string>Registrarse</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="caja_login">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>160</y>
+      <width>351</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#caja_login{
+color:black;
+background-color:rgb(85, 255, 127);
+border-radius:10px;
+}</string>
+    </property>
+    <property name="title">
+     <string>Iniciar Sesión</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#label_5{
+color:black;
+}</string>
+         </property>
+         <property name="text">
+          <string>Nombre de usuario:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="nombre_usuario_login">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#nombre_usuario_login{
+background-color:white;
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#label_6{
+color:black;
+}</string>
+         </property>
+         <property name="text">
+          <string>Contraseña:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="contrasenia_login">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#contrasenia_login{
+background-color:white;
+}</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="boton_login">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#boton_login{
+color:black;
+background-color:rgb(255, 255, 0);
+border-radius:4px;
+padding:7px;
+}
+
+#boton_login:hover{
+color:white;
+background-color:red;
+}</string>
+       </property>
+       <property name="text">
+        <string>Iniciar Sesión</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="salir_main">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>570</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#salir_main{
+background-color:rgb(255, 0, 0);
+color:rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>SALIR</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>

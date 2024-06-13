@@ -1,0 +1,15 @@
+release/ahorro.o
+release/ahorro1.o
+release/depositar_dinero.o
+release/eligecuenta.o
+release/main.o
+release/mainwindow.o
+release/perfil.o
+release/usuario.o
+release/qrc_src.o
+release/moc_ahorro.o
+release/moc_ahorro1.o
+release/moc_depositar_dinero.o
+release/moc_eligecuenta.o
+release/moc_mainwindow.o
+release/moc_perfil.o

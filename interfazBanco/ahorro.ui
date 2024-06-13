@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ahorro</class>
+ <widget class="QDialog" name="Ahorro">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>902</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Ahorro{
+background-color:rgb(0, 170, 255);
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>451</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>26</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label{
+color:black;
+}</string>
+   </property>
+   <property name="text">
+    <string>Creando cuenta de Ahorro:</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="contenedorDatosAhorro">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>170</y>
+     <width>361</width>
+     <height>418</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#contenedorDatosAhorro{
+background-color:rgb(255, 255, 170);
+border-radius:7px;
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>341</width>
+      <height>58</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_8{
+color: black;
+}</string>
+       </property>
+       <property name="text">
+        <string>Nombres:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="nombres">
+       <property name="styleSheet">
+        <string notr="true">#nombres{
+background-color:white;
+}</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>73</y>
+      <width>341</width>
+      <height>58</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_9{
+color: black;
+}</string>
+       </property>
+       <property name="text">
+        <string>Apellidos:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="apellidos">
+       <property name="styleSheet">
+        <string notr="true">#apellidos{
+background-color:white;
+}</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>137</y>
+      <width>343</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_2{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>Número de celular:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLineEdit" name="celular">
+       <property name="styleSheet">
+        <string notr="true">#celular{
+background:white;
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_4{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>¿En que moneda deseas abrir tu cuenta?</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>273</y>
+      <width>341</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_5{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>¿En que lugar usarás preferentemente</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_6{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>tu cuenta?</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>339</y>
+      <width>341</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_7{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>Eliga una región:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="opcionesRegion">
+       <item>
+        <property name="text">
+         <string>Amazonas</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Áncash</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Apurímac</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Arequipa</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ayacucho</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cajamarca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Callao</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cusco</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Huancavelica</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Huánuco</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ica</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Junín</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>La Libertad</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lambayeque</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lima Metropolitana</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lima (departamento)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Loreto</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Madre de Dios</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Moquegua</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pasco</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Piura</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Puno</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>San Martín</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tacna</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tumbes</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ucayali</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>373</y>
+      <width>341</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="btnVentanaElegir">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Atrás</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btnVentanaAhorro">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Continuar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>234</y>
+      <width>341</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QRadioButton" name="soles">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#soles{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>Soles</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="dolares">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#dolares{
+color:black;
+}</string>
+       </property>
+       <property name="text">
+        <string>Dólares</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>481</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_3{
+color:black;
+}</string>
+   </property>
+   <property name="text">
+    <string>Por favor, completa los siguientes datos:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

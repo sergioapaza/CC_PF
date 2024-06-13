@@ -1,0 +1,15 @@
+debug/ahorro.o
+debug/ahorro1.o
+debug/depositar_dinero.o
+debug/eligecuenta.o
+debug/main.o
+debug/mainwindow.o
+debug/perfil.o
+debug/usuario.o
+debug/qrc_src.o
+debug/moc_ahorro.o
+debug/moc_ahorro1.o
+debug/moc_depositar_dinero.o
+debug/moc_eligecuenta.o
+debug/moc_mainwindow.o
+debug/moc_perfil.o
